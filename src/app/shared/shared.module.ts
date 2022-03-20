@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WeatherIconComponent } from './components/weather-icon/weather-icon.component';
@@ -10,8 +11,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     WeatherIconComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    HttpClientModule,
   ],
-  exports: [ReactiveFormsModule]
+  exports: [ReactiveFormsModule,WeatherIconComponent]
 })
 export class SharedModule { }

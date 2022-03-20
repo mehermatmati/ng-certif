@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { WeatherEnum } from './../../enums/weather.enum';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-weather-icon',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WeatherIconComponent implements OnInit {
 
+  @Input()
+  public condition : String
+
+  public weatherEnum = WeatherEnum;
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+ 
