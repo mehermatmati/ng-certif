@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { TodayWeatherComponent } from './components/today-weather/today-weather.component';\nexport var TodayWeatherRoutes = [{\n  path: '',\n  component: TodayWeatherComponent\n}, {\n  path: '**',\n  redirectTo: ''\n}];","map":null,"metadata":{},"sourceType":"module"}

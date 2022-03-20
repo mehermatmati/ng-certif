@@ -3,11 +3,11 @@ import { Routes } from '@angular/router';
 
 export const FiveDaysWeatherRoutes: Routes = [
   {
-    path: 'fiveDays/:zipCode',
+    path: ':zipCode',
     component: FiveDaysWeatherComponent,
   },
   {
     path: '**',
-    redirectTo: 'weather'
+    redirectTo: ''
   } 
 ]; 

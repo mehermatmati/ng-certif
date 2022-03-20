@@ -10,7 +10,7 @@
             - Min {{weather?.maxTemp}}
           </p>
           <p>
-            <a [routerLink]="['/future/fiveDays', weather.zipCode]">Show 5-day forecast for Rancho Cordova</a>
+            <a [routerLink]="['/forecast', weather.zipCode]">Show 5-day forecast for {{weather?.city}}</a>
           </p>
         </div>
         <div>

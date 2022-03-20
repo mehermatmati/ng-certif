@@ -15,7 +15,7 @@ export class LocationComponent implements OnInit {
 
   constructor() { 
     this.form = new FormGroup({
-      zipCode : new FormControl(null ,[Validators.required, Validators.pattern("^([0-9]{5})(?:[-\s]*([0-9]{4}))?$")])
+      zipCode : new FormControl(null ,[Validators.required, Validators.pattern("^[0-9]{5}(?:-[0-9]{4})?$")])
     })
   }
 

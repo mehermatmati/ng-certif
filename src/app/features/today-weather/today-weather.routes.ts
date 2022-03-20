@@ -5,12 +5,12 @@ import { Routes } from '@angular/router';
 
 export const TodayWeatherRoutes: Routes = [
   {
-    path: 'weather',
+    path: '',
     component: TodayWeatherComponent,
   },
   {
     path: '**',
-    redirectTo: 'weather'
+    redirectTo: ''
   },
 
 ];

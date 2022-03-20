@@ -1,2 +1,4 @@
+<h4>Template for main page:</h4>
+
 <app-location [zipCodes]="zipCodes" (locationEmitter)="receiveLocation($event)"></app-location>
 <app-weather *ngFor="let weather of weathers; let i=index" [weather]="weather" [index]="i" (deleteEmitter)="receiveDelete($event)"></app-weather>
