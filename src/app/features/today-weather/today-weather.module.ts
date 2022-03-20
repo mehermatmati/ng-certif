@@ -1,3 +1,5 @@
+import { TodayWeatherRoutes } from './today-weather.routes';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TodayWeatherComponent } from './components/today-weather/today-weather.component';
@@ -13,7 +15,8 @@ import { SharedModule } from '../../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    RouterModule.forChild(TodayWeatherRoutes)
   ],
   exports: [TodayWeatherComponent,
     LocationComponent,

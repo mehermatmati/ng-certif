@@ -10,6 +10,8 @@ export class WeatherIconComponent implements OnInit {
 
   @Input()
   public condition : String
+  @Input()
+  public isIcon : boolean;
 
   public weatherEnum = WeatherEnum;
   constructor() { }

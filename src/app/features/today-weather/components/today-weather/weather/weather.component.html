@@ -1,21 +1,22 @@
 <div >
     <div class="well flex">
         <div>
-          <h3>Rancho Cordova (95742)</h3>
-          <h4>Current conditions: Clouds</h4>
+          <h3>{{weather?.city}} ({{weather?.zipCode}})</h3>
+          <h4>Current conditions: {{weather?.weatherCondition}}</h4>
           <h4>Temperatures today:</h4>
           <p>
-            Current 58
-            - Max 65
-            - Min 48
+            Current {{weather?.temp}}
+            - Max {{weather?.minTemp}}
+            - Min {{weather?.maxTemp}}
           </p>
           <p>
-            <a href="/forecast/95742">Show 5-day forecast for Rancho Cordova</a>
+            <a [routerLink]="['/future/fiveDays', weather.zipCode]">Show 5-day forecast for Rancho Cordova</a>
           </p>
         </div>
         <div>
-          <span class="close">×</span>
-          <img src="https://www.angulartraining.com/images/weather/sun.png">
+          <span class="close" (click)="delete()">×</span>
+          
+          <app-weather-icon [condition]="weather.weatherCondition"></app-weather-icon> 
         </div>
      </div>
     </div>

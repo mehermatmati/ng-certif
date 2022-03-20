@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var AppRoutes = [{\n  path: '',\n  pathMatch: 'full',\n  redirectTo: 'today'\n}, {\n  path: 'today',\n  loadChildren: function loadChildren() {\n    return import('./features/today-weather/today-weather.module').then(function (x) {\n      return x.TodayWeatherModule;\n    });\n  }\n}];","map":null,"metadata":{},"sourceType":"module"}

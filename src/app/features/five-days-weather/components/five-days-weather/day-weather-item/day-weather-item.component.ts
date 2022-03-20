@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Weather } from './../../../../../shared/models/weather.model';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-day-weather-item',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DayWeatherItemComponent implements OnInit {
 
+  @Input()
+  public weather : Weather;
   constructor() { }
 
   ngOnInit(): void {
