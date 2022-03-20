@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { FiveDaysWeatherComponent } from './components/five-days-weather/five-days-weather.component';\nexport var FiveDaysWeatherRoutes = [{\n  path: 'fiveDays/:zipCode',\n  component: FiveDaysWeatherComponent\n}];","map":null,"metadata":{},"sourceType":"module"}

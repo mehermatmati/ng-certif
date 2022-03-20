@@ -1,1 +1,7 @@
-<p>weather-icon works!</p>
+<div [ngSwitch]="condition">
+    <img [ngClass]="isIcon? 'icon' : 'no-icon'" *ngSwitchCase="weatherEnum.CLEAR"   src="https://www.angulartraining.com/images/weather/sun.png">
+    <img [ngClass]="isIcon? 'icon': 'no-icon'" *ngSwitchCase="weatherEnum.RAIN"   src="https://www.angulartraining.com/images/weather/rain.png">
+    <img [ngClass]="isIcon? 'icon': 'no-icon'"  *ngSwitchCase="weatherEnum.SNOW"  src="https://www.angulartraining.com/images/weather/snow.png">
+    <img [ngClass]="isIcon? 'icon': 'no-icon'" *ngSwitchCase="weatherEnum.CLOUDS"   src="https://www.angulartraining.com/images/weather/clouds.png">
+    <img [ngClass]="isIcon? 'icon': 'no-icon'" *ngSwitchDefault  src="https://img.icons8.com/pastel-glyph/2x/file-not-found--v2.png">
+</div> 

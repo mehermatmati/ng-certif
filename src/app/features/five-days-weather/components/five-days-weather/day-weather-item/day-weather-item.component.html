@@ -1,1 +1,8 @@
-<p>day-weather-item works!</p>
+<li class="list-group-item">
+        {{weather.date | date:'EEEE'}}
+        {{weather.weatherCondition}}
+        - Min: {{weather.minTemp}}
+        - Max: {{weather.maxTemp}}
+
+        <app-weather-icon [isIcon]="true" [condition]="weather.weatherCondition"></app-weather-icon> 
+      </li>

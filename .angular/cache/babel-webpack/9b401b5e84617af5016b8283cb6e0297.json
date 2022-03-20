@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var AppRoutes = [{\n  path: 'future',\n  loadChildren: function loadChildren() {\n    return import('./features/five-days-weather/five-days-weather.module').then(function (x) {\n      return x.FiveDaysWeatherModule;\n    });\n  }\n}];","map":null,"metadata":{},"sourceType":"module"}

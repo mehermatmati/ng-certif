@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var AppRoutes = [{\n  path: '',\n  pathMatch: 'full',\n  redirectTo: 'feature-one'\n}, {\n  path: 'feature-one',\n  loadChildren: './feature-one/feature-one.module#FeatureOneModule'\n}, {\n  path: 'feature-two',\n  loadChildren: './feature-two/feature-two.module#FeatureTwoModule'\n}];","map":null,"metadata":{},"sourceType":"module"}
